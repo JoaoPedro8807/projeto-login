@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root{
+
+    --fonte1: Verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Roboto slab', serif;
+
+
+    --cor1: #8cb9b6;
+    --cor2: #5f2c82;
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width: 1200px){
+    body {
+        background-image: linear-gradient(to top,#8cb9b6, #5f2c82);
+    }
+
+
+
+    section#login {
+        width: 80vw;
+        height: 362px;
+    }
+
+
+    #imagem{
+        background-image: url(../imagens/tamanhoMedio.jpg);
+        display: block;
+        float: left;
+        width: 30%;
+        height: 100%;
+
+    }
+
+   #formulario {
+    width: 70%;
+    float: right;
+   }
+
+   #formulario input.txt{
+    width: 90%;
+   }
+
+  #enviar input {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+

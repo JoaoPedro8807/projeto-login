@@ -89,16 +89,17 @@ section#login {
     
 #email{
     background-color: var(--cor2);
-    padding: 4px;
+    padding: 2px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 .material-icons.orange600 { /* O icon funciona como uma fonte, então podemos fazer declarações de uma fonte para atlera-lo */ 
      color: white; 
-     font-size: 28px;
+     font-size: 24px;
      text-align: center;   
      padding: 2px;   
+     
 }
 
 #senha {
