@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* mobile first */ 
+:root{
+
+    --fonte1: Verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Roboto slab', serif;
+
+
+    --cor1: #8cb9b6;
+    --cor2: #5f2c82;
+}
+
+/* Paleta de cores: 
+
+Verde: #79a09d
+Lilás: #5f2c82
+
+
+
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte1);
+    box-sizing: border-box; /* faz com que a borda também  faça parte expessura e altura da caixa */
+}
+
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    /*                                 Fixando a caixa inteira de login no centro da pagina */ 
+    position: absolute;  /* faz com que a posição fique absoluta e com que possamos altrerar a sua posição */ 
+    top: 50%;  /* O top e o left juntos (em 50%), fazem com que o canto superior direito da caixa do login fique centralizado no centro, até ai está certo, mas precisamos voltar, pois oq deve ficar centralizado é o centro da caixa, e não o canto superior esquerdo. */ 
+    left: 50%; /* Então usaremos o transfor: transete () */  
+    transform: translate(-50%, -50% ); /* Aqui conseguimmos  mover a parte superior e esquerda para cima ou para baixo, como oq está centralizado é o ponto esquerdo superior da caixa e queremos centralizar o centro dela, movemos
+    a caixa metade para esquerda e metade para cima (-50%, -50%), assim o centro da caixa ficará sempre no meio da tela, independente da tela */ 
+    background-color: white;
+    height: 580px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px black;
+}
+
+#imagem{
+    background-image: url(../imagens/img.jpg);
+    background-size: cover;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#formulario {
+    font-family: var(--fonte1);
+    padding: 6px;
+}
+
+#formulario > p {
+    font-size: 0.8em;
+}
+
+#formulario > h1 {
+    text-align: center;
+    padding-bottom: 20px;    
+    padding-top: 10px;
+}
+
+#formulario input.txt{ /* Para diferenciar o input que irá texto (email e senha) do input submit (enviar) */ 
+    height: 40px;
+    background-color: #96ebe4;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 1em;
+    border: none;
+}
+    
+#email{
+    background-color: var(--cor2);
+    padding: 4px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.material-icons.orange600 { /* O icon funciona como uma fonte, então podemos fazer declarações de uma fonte para atlera-lo */ 
+     color: white; 
+     font-size: 28px;
+     text-align: center;   
+     padding: 2px;   
+}
+
+#senha {
+    background-color: var(--cor2); /* O icon funciona como uma fonte, então podemos fazer declarações de uma fonte para altera-lo*/
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 2px;
+    font-size: 1em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#enviar input {
+    height: 52px;
+    width: 248px;
+    background-color: #6eb9b3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#enviar input:hover{
+    background-color:  #3e6d6a;
+    
+}
+
+form > a.recuperarS{
+    text-decoration: none;
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 10px;
+    padding-top: 10px;
+    height: 40px;
+}
+
+#iconMail{
+    display: inline;
+    font-size: 16px;
+    color: var(--cor1);
+}
+
+a.recuperarS:hover{
+    background-color: #8ddfd89f;
+}

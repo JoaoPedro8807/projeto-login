@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto de uma tela de login</title>
+    <link rel="stylesheet" href="estilos/mobileFirst.css">
+    <link rel="stylesheet" href="estilos/outros.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
+ <main>
+    <section id="login">
+        <div id="imagem">
+            
+        </div>
+
+        <div id="formulario">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as confurações no seu ambiente.</p>
+                
+            <form action="login.php" method="post" style="padding-top: 18px;">
+                <div id="email">
+                    <span class="material-icons orange600" style="width: 24px;">face</span>
+                    <input  class="txt" type="email" name="email" id="iemail" maxlength="30" required autocomplete="email" placeholder=" seu e-mail">
+                </div>
+                    
+                <div id="senha">
+                    <span  id="iconKey" class="material-icons">key</span>
+                    <input  class="txt" type="password" name="senha" id="isenha" minlength="8" maxlength="20" required placeholder=" sua senha">
+                </div>
+
+                <div id="enviar">
+                    <input type="submit" value="Entrar">
+                </div>
+
+                <a href="recuperarS.html" class="recuperarS">Esqueci a Senha <span  id="iconMail" class="material-icons">mail</span></a>
+  
+                </form>
+        </div>
+    </section>
+ </main>
 </body>
 </html>
