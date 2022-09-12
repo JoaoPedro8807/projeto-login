@@ -80,7 +80,6 @@ section#login {
 #formulario input.txt{ /* Para diferenciar o input que irá texto (email e senha) do input submit (enviar) */ 
     height: 40px;
     background-color: #96ebe4;
-    margin-left: 10px;
     border-radius: 10px;
     width: 200px;
     font-size: 1em;
@@ -99,7 +98,6 @@ section#login {
      font-size: 24px;
      text-align: center;   
      padding: 2px;   
-     
 }
 
 #senha {
@@ -126,7 +124,6 @@ section#login {
 
 #enviar input:hover{
     background-color:  #3e6d6a;
-    
 }
 
 form > a.recuperarS{
@@ -139,6 +136,11 @@ form > a.recuperarS{
     border-radius: 10px;
     padding-top: 10px;
     height: 40px;
+}
+
+#iconKey{
+    float: left;
+    max-width: 24px;   
 }
 
 #iconMail{

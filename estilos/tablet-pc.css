@@ -11,20 +11,15 @@
 }
 
 
-
-
 @media screen and (min-width:768px) and (max-width: 1200px){
     body {
-        background-image: linear-gradient(to top,#8cb9b6, #5f2c82);
+        background-image: linear-gradient(to top,#328b85, #5f2c82);
     }
-
-
 
     section#login {
         width: 80vw;
         height: 362px;
     }
-
 
     #imagem{
         background-image: url(../imagens/tamanhoMedio.jpg);
@@ -32,7 +27,9 @@
         float: left;
         width: 30%;
         height: 100%;
-
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
     }
 
    #formulario {
@@ -41,7 +38,7 @@
    }
 
    #formulario input.txt{
-    width: 90%;
+    width: 92%;
    }
 
   #enviar input {
