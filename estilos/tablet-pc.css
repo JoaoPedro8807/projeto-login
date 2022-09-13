@@ -17,7 +17,7 @@
     }
 
     section#login {
-        width: 80vw;
+        width: 72vw;
         height: 362px;
         
     }
@@ -39,7 +39,7 @@
    }
 
    #formulario input.txt{
-    width: 92%;
+    width: 90%;
    }
 
   #enviar input {
