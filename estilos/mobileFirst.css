@@ -152,6 +152,10 @@ form > a.recuperarS{
     color: white;
 }
 
+#iconMail2{
+    color:var(--cor1) ;
+}
+
 a.recuperarS:hover{
     background-color: #8ddfd89f;
 }
