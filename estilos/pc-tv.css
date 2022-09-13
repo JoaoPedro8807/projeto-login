@@ -43,7 +43,9 @@
 
     #formulario > p {
         font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-bottom: 20px;
+
     }
 
    #formulario input.txt {
