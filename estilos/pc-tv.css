@@ -25,6 +25,7 @@
         width: 40%;
         height: 100%;
         background-image: url(../imagens/PC-TV.jpg);
+        display: block;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0px;
@@ -45,8 +46,6 @@
         font-size: 1em;
         margin-bottom: 20px;
     }
-
-
 
    #formulario input.txt {
     width: 94%;
